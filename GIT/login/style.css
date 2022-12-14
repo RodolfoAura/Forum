@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&display=swap');
+
+body {
+    padding: 0;
+    margin: 0;
+    background-image: url(https://static.alphacoders.com/thumbs_categories/20.jpg);
+    animation: body 20s linear infinite;
+    font-family: 'Open Sans', sans-serif;
+}
+
+@keyframes body {
+    from {
+		background-position: 0px;
+	}
+
+	to {
+		background-position: -1920px;
+	}
+}
+
+
+
+#login {
+    font-size: 4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.card {
+    background-color: rgb(255, 255, 255);
+    padding: 40px;
+    width: 280px;
+    height: 430px;
+    border: solid 3px #000000;
+    border-radius: 10px;
+}
+
+.card-header {
+    padding-bottom: 20px;
+    color: #4f0885;
+}
+
+.voltar{
+    height: 20px;
+    margin-bottom: 50px;
+    padding-top: 0px;
+}
+
+.card-header::after {
+    width: 70px;
+    height: 1px;
+    background-color: #fff;
+    display: block;
+    margin-top: -17px;
+    margin-left: -5px;
+}
+
+.card-content-area {
+    display: flex;
+    flex-direction: column;
+    padding: 10px 0;
+}
+
+.card-content-area input {
+    margin: 5px;
+    padding: 0 5px;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    color: rgb(0, 0, 0);
+
+}
+
+.card-footer {
+    display: flex;
+    flex-direction: column;
+}
+
+.card-footer .submit {
+    width: 100%;
+    height: 40px;
+    background-color: #6c16c9;
+    border: none;
+    color: #ffffff;
+    margin: 10px 0;
+    border-radius: 20px;
+}
+
+.card-footer a {
+    text-align: center;
+    font-size: 12px;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+
+}
+
+.recuperar_senha{
+    padding-bottom: 15px;
+
+}
+
+.label-input {
+    background-color: #ecf0f1;
+    display: flex;
+    align-items: center;
+
+}
+input {
+    height: 25px;
+    width: 100%;
+    border: none;
+    outline: none;
+}
+
+.icon-modify {
+    color: #7f8c8d;
+    padding: 0 5px;
+}
+
+.card-footer .submit:hover {
+    background-color: #fff;
+    border: 1px solid #4f0885;
+    color: #4f0885;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 1040px) {
+   
+    body{
+        animation:none !important;
+        background-size: 105vh;
+  
+    }
+}

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+    integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <title>Document</title>
+</head>
+
+<body onload="carregarComentarios()">
+    <header>
+        <img   onclick="mascaico()"
+
+            src="../assets/Filmes.gif" />
+
+            <label class="pesquisa" for="">
+                <i class="fas fa-search"></i>
+                <input id="Pesquisa" type="text" placeholder="Pesquisar" required>
+            </label>
+        <a href="../login/Login.html" id="usuario"> <button type="submit" class="submit">Login</button></a>
+    </header>
+    <main>
+
+        <div class="modal">
+            <img class="voltar" onclick="modalx()" src="../assets/pngwing.com.png">
+            <select id="categoria">sss</select>
+            <select id="subcategoria">sss</select>
+            <textarea id="conteudo" placeholder="Escreva aqui seu comentario"></textarea>
+            <button id="Enviar" onclick="cadastrarComentarios()">Enviar comentario</button> 
+        </div>
+
+        <div class="content">
+            <div class="topico model">
+                <div class="topico1">
+                    <p class="nome">Felipe</p>
+                    <p class="conteudo">Adoro Dorama</p>
+                    <p class="data">27/12/2022</p>
+
+                </div>
+                <div class="topico2">
+                    <div class="cima">
+                        <img class="like" src="../assets/coracao.png">
+                        <button onclick="carregarRespostas(this)"><img class="coment" src="../assets/bate-papo.png"></button>
+                        
+                    </div>
+                    <div class="baixo">
+                        <button class="categoria">Série</button>
+                        <button class="subcategoria">Coreana</button>
+                    </div>
+                </div>
+            </div>  
+        </div>
+
+        <div class="add">
+
+            <button onclick="modal()">+</button>
+        </div>
+        
+        <div id="backgroundComent" class="model">
+            <input type="text" id="comentariozinho">
+            <div id="Coment">
+                <div id="resp">
+                    <p id="user">joaozinho</p>
+                    <p id="resposta">real</p>
+                    <button>responder</button>
+                </div>
+                <div id="subresp">
+                    <p id="usersub">Rodolfo</p>
+                    <p id="respsub">nao sabe o qje fala</p>
+                    <button>responder</button>
+                </div>
+            </div>
+            
+            <button onclick="fecharComentarios()">Conteudo</button>
+        </div>
+    </main>
+
+</body>
+
+<script src="script.js"></script>
+
+</html>
